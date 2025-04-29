@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+/* Gesamte Seite */
+body {
+    background-color: #1c0a24;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    top: 30px;
+}
+
+#content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    height: 100dvh;
+    left: 25%;
+    padding: 20px;
+}
+
+/* Tabelle */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Tabellenzellen */
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+    font-weight: bold;
+    border: 0; /* außen keine Linien */
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+/* Rechte Randzellen ohne rechte Linie */
+tr td:last-child {
+    border-right: none;
+}
+
+/* Unterste Zeile ohne untere Linie */
+table tr:last-child td {
+    border-bottom: none;
+}
